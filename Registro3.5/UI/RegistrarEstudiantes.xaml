@@ -33,7 +33,7 @@
         <TextBox x:Name="CedulaTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
         <TextBox x:Name="DireccionTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="18"/>
         <DatePicker x:Name="FechaNacimientoDatePicker" Grid.Column="1" HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="5" VerticalAlignment="Top" Height="24" Width="145"/>
-        <Button x:Name="BuscarButton" Content="Buscar" Grid.Column="2" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="25,25,0,0" VerticalAlignment="Top" Width="89" FontSize="18">
+        <Button x:Name="BuscarButton" Content="Buscar" Grid.Column="2" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="25,25,0,0" VerticalAlignment="Top" Width="89" FontSize="18" Click="BuscarButton_Click">
             <Button.Background>
                 <ImageBrush TileMode="Tile" Stretch="Uniform" ImageSource="C:\Users\Usuario\source\repos\Registro3.5\Registro3.5\Icono\Buscar.jpg" AlignmentX="Left"/>
             </Button.Background>
@@ -43,12 +43,12 @@
                 <ImageBrush TileMode="Tile" Stretch="Uniform" ImageSource="C:\Users\Usuario\source\repos\Registro3.5\Registro3.5\Icono\new.jpg" AlignmentX="Left"/>
             </Button.Background>
         </Button>
-        <Button x:Name="GuardarButton" Content="Guardar" Grid.Column="1" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="100,25,0,0" Grid.Row="6" VerticalAlignment="Top" FontSize="18" Width="101">
+        <Button x:Name="GuardarButton" Content="Guardar" Grid.Column="1" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="100,25,0,0" Grid.Row="6" VerticalAlignment="Top" FontSize="18" Width="101" Click="GuardarButton_Click">
             <Button.Background>
                 <ImageBrush TileMode="Tile" Stretch="Uniform" ImageSource="C:\Users\Usuario\source\repos\Registro3.5\Registro3.5\Icono\save.png" AlignmentX="Left"></ImageBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="EliminarButton" Content="Eliminar" Grid.Column="2" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="65,25,0,0" Grid.Row="6" VerticalAlignment="Top" FontSize="18" Width="102">
+        <Button x:Name="EliminarButton" Content="Eliminar" Grid.Column="2" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="65,25,0,0" Grid.Row="6" VerticalAlignment="Top" FontSize="18" Width="102" Click="EliminarButton_Click">
             <Button.Background>
                 <ImageBrush TileMode="Tile" Stretch="Uniform" ImageSource="C:\Users\Usuario\source\repos\Registro3.5\Registro3.5\Icono\eliminar.jpg" AlignmentX="Left"></ImageBrush>
             </Button.Background>

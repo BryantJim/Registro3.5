@@ -1,8 +1,8 @@
 CREATE DATABASE InscripcionDb	
 GO
-USE IncripcionDb
+USE InscripcionDb
 GO
-CREATE TABLE Estudiante
+CREATE TABLE Estudiantes
 (
 EstudianteId int primary key identity,
 Nombre varchar(40),
@@ -21,4 +21,3 @@ Comentario varchar(50),
 Balance decimal,
 Monto decimal
 );
-

@@ -8,7 +8,7 @@ namespace Registro3._5.DAL.Scripts
 {
     public class Contexto : DbContext
     {
-        public DbSet<Estudiantes> Estudiante { get; set; }
+        public DbSet<Estudiantes> Estudiantes { get; set; }
         public DbSet<Inscripciones> Inscripcion { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

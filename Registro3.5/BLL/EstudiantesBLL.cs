@@ -20,7 +20,7 @@ namespace Registro3._5.BLL
 
             try
             {
-                if (db.Estudiante.Add(estudiante) != null)
+                if (db.Estudiantes.Add(estudiante) != null)
                     paso = (db.SaveChanges() > 0);
             }
             catch (Exception)
@@ -62,7 +62,7 @@ namespace Registro3._5.BLL
 
             try
             {
-                var Eliminar = db.Estudiante.Find(id);
+                var Eliminar = db.Estudiantes.Find(id);
                 db.Entry(Eliminar).State = EntityState.Deleted;
                 paso = (db.SaveChanges() > 0);
             }
@@ -84,7 +84,7 @@ namespace Registro3._5.BLL
 
             try
             {
-                estudiante = db.Estudiante.Find(id);
+                estudiante = db.Estudiantes.Find(id);
             }
             catch (Exception)
             {
@@ -104,7 +104,7 @@ namespace Registro3._5.BLL
 
             try
             {
-                Lista = db.Estudiante.Where(estudiante).ToList();
+                Lista = db.Estudiantes.Where(estudiante).ToList();
             }
             catch (Exception)
             {
