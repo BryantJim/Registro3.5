@@ -1,0 +1,58 @@
+﻿<Window x:Class="Registro3._5.UI.RegistrarEstudiantes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Registro3._5.UI"
+        mc:Ignorable="d"
+        Title="RegistrarEstudiantes" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="62*"/>
+            <RowDefinition Height="62*"/>
+            <RowDefinition Height="62*"/>
+            <RowDefinition Height="62*"/>
+            <RowDefinition Height="62*"/>
+            <RowDefinition Height="62*"/>
+            <RowDefinition Height="72*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="234*"/>
+            <ColumnDefinition Width="299*"/>
+            <ColumnDefinition Width="267*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="25,25,0,0" Text="Estudiante ID" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Height="24" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="1" Text="Nombres" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Height="24" Width="85"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="2" Text="Teléfono" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Height="24" Width="68"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="3" Text="Cédula" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Height="24" Width="55"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="4" Text="Dirección" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Height="24" Width="89"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="5" Text="Fecha de Nacimiento" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="189" Height="24"/>
+        <TextBox x:Name="EstudianteIdTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="25,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" Height="18"/>
+        <TextBox x:Name="NombresTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="18"/>
+        <TextBox x:Name="TelefonoTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+        <TextBox x:Name="CedulaTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+        <TextBox x:Name="DireccionTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="18"/>
+        <DatePicker x:Name="FechaNacimientoDatePicker" Grid.Column="1" HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="5" VerticalAlignment="Top" Height="24" Width="145"/>
+        <Button x:Name="BuscarButton" Content="Buscar" Grid.Column="2" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="25,25,0,0" VerticalAlignment="Top" Width="89" FontSize="18">
+            <Button.Background>
+                <ImageBrush TileMode="Tile" Stretch="Uniform" ImageSource="C:\Users\Usuario\source\repos\Registro3.5\Registro3.5\Icono\Buscar.jpg" AlignmentX="Left"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="NuevoButton" Content="Nuevo" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="65,25,0,0" Grid.Row="6" VerticalAlignment="Top" FontSize="18" Width="82" Click="NuevoButton_Click">
+            <Button.Background>
+                <ImageBrush TileMode="Tile" Stretch="Uniform" ImageSource="C:\Users\Usuario\source\repos\Registro3.5\Registro3.5\Icono\new.jpg" AlignmentX="Left"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="GuardarButton" Content="Guardar" Grid.Column="1" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="100,25,0,0" Grid.Row="6" VerticalAlignment="Top" FontSize="18" Width="101">
+            <Button.Background>
+                <ImageBrush TileMode="Tile" Stretch="Uniform" ImageSource="C:\Users\Usuario\source\repos\Registro3.5\Registro3.5\Icono\save.png" AlignmentX="Left"></ImageBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="EliminarButton" Content="Eliminar" Grid.Column="2" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="65,25,0,0" Grid.Row="6" VerticalAlignment="Top" FontSize="18" Width="102">
+            <Button.Background>
+                <ImageBrush TileMode="Tile" Stretch="Uniform" ImageSource="C:\Users\Usuario\source\repos\Registro3.5\Registro3.5\Icono\eliminar.jpg" AlignmentX="Left"></ImageBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
