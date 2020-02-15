@@ -1,0 +1,12 @@
+﻿<Window x:Class="Registro3._5.UI.Pago.Pagos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Registro3._5.UI.Pago"
+        mc:Ignorable="d"
+        Title="Pagos" Height="450" Width="800">
+    <Grid>
+        
+    </Grid>
+</Window>
