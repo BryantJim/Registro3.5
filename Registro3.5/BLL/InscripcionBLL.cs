@@ -12,6 +12,47 @@ namespace Registro3._5.BLL
 {
     public class InscripcionBLL
     {
+        public static bool DisminuirBalance(Inscripciones inscripcion)
+        {
+            bool paso = false;
+            Contexto db = new Contexto();
+
+            try
+            {
+                db.Estudiantes.Find(inscripcion.EstudianteId).Balance -= inscripcion.Monto;
+                paso = (db.SaveChanges() > 0);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                db.Dispose();
+            }
+            return paso;
+        }
+
+        public static bool AumentarBalance(Inscripciones inscripcion)
+        {
+            bool paso = false;
+            Contexto db = new Contexto();
+
+            try
+            {
+                db.Estudiantes.Find(inscripcion.EstudianteId).Balance += inscripcion.Monto;
+                paso = (db.SaveChanges() > 0);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                db.Dispose();
+            }
+            return paso;
+        }
 
         public static bool Guardar(Inscripciones inscripcion)
         {
@@ -21,7 +62,7 @@ namespace Registro3._5.BLL
             try
             {
                 if (db.Inscripcion.Add(inscripcion) != null)
-                    paso = (db.SaveChanges() > 0);
+                    paso = (db.SaveChanges() > 0 && AumentarBalance(inscripcion));
             }
             catch (Exception)
             {
@@ -42,7 +83,7 @@ namespace Registro3._5.BLL
             try
             {
                 db.Entry(inscripcion).State = EntityState.Modified;
-                paso = (db.SaveChanges() > 0);
+                paso = (db.SaveChanges() > 0 && DisminuirBalance(inscripcion));
             }
             catch (Exception)
             {

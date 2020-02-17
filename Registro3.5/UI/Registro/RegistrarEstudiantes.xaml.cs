@@ -69,18 +69,6 @@ namespace Registro3._5.UI
             FechaNacimientoDatePicker.SelectedDate = Convert.ToDateTime(estudiante.FechaNacimiento);
         }
 
-        private Inscripciones LlenarClaseI()
-        {
-            Inscripciones inscripcion = new Inscripciones();
-            inscripcion.InscripcionId = Convert.ToInt32(EstudianteIdTextBox.Text);
-            inscripcion.Fecha = DateTime.Now;
-            inscripcion.EstudianteId = Convert.ToInt32(EstudianteIdTextBox.Text);
-            inscripcion.Comentario = "";
-            inscripcion.Balance = COSTO;
-            inscripcion.Monto = 0;
-            return inscripcion;
-        }
-
         private bool existeEnLaBaseDeDatos()
         {
             Estudiantes estudiante = EstudiantesBLL.Buscar(Convert.ToInt32(EstudianteIdTextBox.Text));
@@ -146,13 +134,11 @@ namespace Registro3._5.UI
                 return;
 
             estudiante = LlenarClase();
-            inscripcion = LlenarClaseI();
 
             //determinar si es guardar o modificar
             if (EstudianteIdTextBox.Text == "0")
             {
                 paso = EstudiantesBLL.Guardar(estudiante);
-                paso = InscripcionBLL.Guardar(inscripcion);
             }   
             else
             {
@@ -162,7 +148,7 @@ namespace Registro3._5.UI
                     return;
                 }
                 paso = EstudiantesBLL.Modificar(estudiante);
-                paso = InscripcionBLL.Modificar(inscripcion);
+                //paso = InscripcionBLL.Modificar(inscripcion);
             }
 
             //informar resurtado

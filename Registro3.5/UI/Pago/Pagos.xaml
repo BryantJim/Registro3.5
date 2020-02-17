@@ -28,17 +28,17 @@
         <TextBlock HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="4" Text="Balance" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Height="24" Width="89"/>
         <TextBlock HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="5" Text="Monto" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="189" Height="24"/>
         <TextBox x:Name="InscripcionIdTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="25,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" Height="18"/>
-        <DatePicker x:Name="FechaPagoTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="25,0,0,0" Grid.Row="1" VerticalAlignment="Center"/>
+        <DatePicker x:Name="FechaPagoDatePicker" Grid.Column="1" HorizontalAlignment="Left" Margin="25,0,0,0" Grid.Row="1" VerticalAlignment="Center"/>
         <TextBox x:Name="EstudianteIdTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" Height="18"/>
         <TextBox x:Name="ComentariTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="18"/>
         <TextBox x:Name="BalancesTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
         <TextBox x:Name="MontoTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="BuscaButton" Content="Buscar" Grid.Column="2" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="25,25,0,0" VerticalAlignment="Top" Width="89" FontSize="18" Click="BuscarButton_Click">
+        <Button x:Name="BuscaButton" Content="Buscar" Grid.Column="2" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="25,25,0,0" VerticalAlignment="Top" Width="89" FontSize="18" Click="BuscaButton_Click">
             <Button.Background>
                 <ImageBrush TileMode="Tile" Stretch="Uniform" ImageSource="C:\Users\Usuario\source\repos\Registro3.5\Registro3.5\Icono\Buscar.jpg" AlignmentX="Left"/>
             </Button.Background>
         </Button>
-        <Button x:Name="NuevButton" Content="Nuevo" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="65,25,0,0" Grid.Row="6" VerticalAlignment="Top" FontSize="18" Width="82" Click="NuevoButton_Click">
+        <Button x:Name="NuevButton" Content="Nuevo" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="65,25,0,0" Grid.Row="6" VerticalAlignment="Top" FontSize="18" Width="82" Click="NuevButton_Click">
             <Button.Background>
                 <ImageBrush TileMode="Tile" Stretch="Uniform" ImageSource="C:\Users\Usuario\source\repos\Registro3.5\Registro3.5\Icono\new.jpg" AlignmentX="Left"/>
             </Button.Background>

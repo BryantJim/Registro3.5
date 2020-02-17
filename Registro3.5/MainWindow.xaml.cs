@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Registro3._5.UI;
+using Registro3._5.UI.Pago;
 
 namespace Registro3._5
 {
@@ -25,7 +26,9 @@ namespace Registro3._5
         {
             InitializeComponent();
             RegistrarEstudiantes re = new RegistrarEstudiantes();
+            Pagos pg = new Pagos();
             re.Show();
+            pg.Show();
         }
     }
 }
