@@ -30,10 +30,10 @@ namespace Registro3._5.BLL.Tests
             bool paso;
             Estudiantes estudiante = new Estudiantes();
             estudiante.EstudianteId = 1;
-            estudiante.Nombre = " Luis David Sánchez";
-            estudiante.Telefono = " 8295660909";
-            estudiante.Cedula = " 056 ";
-            estudiante.Direccion = " Duarte ";
+            estudiante.Nombre = " Nefelty";
+            estudiante.Telefono = " 8296351988";
+            estudiante.Cedula = " 058064999 ";
+            estudiante.Direccion = " VVilla Riva ";
             estudiante.FechaNacimiento = DateTime.Now;
             paso = EstudiantesBLL.Modificar(estudiante);
 
